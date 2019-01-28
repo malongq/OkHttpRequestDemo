@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:onClick="getMethod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GET 请求"/>
+
+    <TextView
+        android:id="@+id/tv_get"
+        android:text="GET 请求成功后   显示测试数据"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:onClick="postMethod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GET 请求"/>
+
+    <TextView
+        android:id="@+id/tv_post"
+        android:text="POST 请求成功后   显示测试数据"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_marginTop="50dp"
+        android:onClick="goNextPage"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="进入下一个页面"/>
+
+</LinearLayout>

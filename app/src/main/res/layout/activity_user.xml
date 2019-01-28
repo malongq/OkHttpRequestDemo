@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UserActivity">
+    
+    <Button
+        android:id="@+id/btn_click"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:text="OKHttp GET 请求"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/iv_img"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="默认显示"/>
+
+    <Button
+        android:id="@+id/btn_post"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:text="OKHttp POST From表单请求"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_post2"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:text="OKHttp POST JSON方式请求"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
