@@ -1,5 +1,6 @@
 package com.izk.okhttp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -28,13 +29,14 @@ import okhttp3.Response;
 import okhttp3.ResponseBody;
 
 /**
- * get请求
+ * get、post 请求
  */
 public class UserActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button btn_click;
     private Button btn_post;
     private Button btn_post2;
+    private Button btn_post3;
     private ImageView iv_img;
     private TextView tv_content;
 
@@ -46,12 +48,14 @@ public class UserActivity extends AppCompatActivity implements View.OnClickListe
         btn_click = findViewById(R.id.btn_click);
         btn_post = findViewById(R.id.btn_post);
         btn_post2 = findViewById(R.id.btn_post2);
+        btn_post3 = findViewById(R.id.btn_post3);
         iv_img = findViewById(R.id.iv_img);
         tv_content = findViewById(R.id.tv_content);
 
         btn_click.setOnClickListener(this);
         btn_post.setOnClickListener(this);
         btn_post2.setOnClickListener(this);
+        btn_post3.setOnClickListener(this);
 
     }
 
@@ -68,6 +72,9 @@ public class UserActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_post2:
                 postJsonRequest();
+                break;
+            case R.id.btn_post3:
+                startActivity(new Intent(UserActivity.this,DownloadActivity.class));
                 break;
         }
     }

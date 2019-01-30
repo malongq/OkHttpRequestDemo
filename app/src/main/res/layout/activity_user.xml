@@ -46,4 +46,12 @@
         android:layout_gravity="center_horizontal"
         android:layout_height="wrap_content" />
 
+    <Button
+        android:id="@+id/btn_post3"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:text="进入下一页面，下载文件"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content" />
+
 </LinearLayout>
